@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+        <TextView
+            android:id="@+id/faxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="全部城市"
+            android:layout_alignBottom="@+id/faxian"
+            android:layout_toRightOf="@+id/faxian"
+            android:textSize="10sp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView16_2"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/beckham"
+            android:layout_alignBottom="@+id/faxian"
+            />
+    <cn.bingoogolapple.bgabanner.BGABanner android:id="@+id/banner_guide_content"
+        app:banner_pageChangeDuration="1000"
+        android:layout_height="160dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight = "0"
+        app:banner_pointAutoPlayAble="false"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_pointTopBottomMargin="15dp"
+        app:banner_transitionEffect="alpha"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <RelativeLayout android:id="@+id/fl_second_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:layout_weight = "0">
+    </RelativeLayout>
+</RelativeLayout>
+
