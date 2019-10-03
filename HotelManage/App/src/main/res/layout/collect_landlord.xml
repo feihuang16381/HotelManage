@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView16_3"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/beckham" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView16_3"
+        android:layout_toRightOf="@id/imageView16_3"
+        android:textColor="@android:color/black"
+        android:text="梅樱堂" />
+
+    <TextView
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:text="商户经营" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/House"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/house2">
+
+    </ImageView>
+    <!--   android:clickable="true"
+       android:onClick="collection"-->
+    <ImageView
+        android:id="@+id/collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="collection"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/collection"
+        />
+</RelativeLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginTop="10dp"
+    android:gravity="left"
+    android:text="小飞是全世界最帅的男生"
+    android:textSize="16sp"
+    android:layout_marginLeft="11dp"
+    android:textColor="@android:color/black"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="5dp"
+
+        android:gravity="center_horizontal"
+        android:text="一居二床4人"
+        android:textSize="11sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$448"
+        android:textColor="#EE3B3B"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="11dp"/>
+
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,22 +1,19 @@
-package com.cqut.sample.hotelManage.ui.fragment.third.child;
+package com.cqut.sample.hotelManage.ui.fragment.second.child;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.cqut.eventbusactivityscope.EventBusActivityScope;
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.hotelManage.MainActivity;
-import com.cqut.sample.hotelManage.RecyclerviewWaterfall_Activity;
+import com.cqut.sample.hotelManage.adapter.HouseStaggeredRecycleViewAdapter;
 import com.cqut.sample.hotelManage.adapter.StaggeredRecycleViewAdapter;
 import com.cqut.sample.hotelManage.event.TabSelectedEvent;
 import com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView;
@@ -33,24 +30,19 @@ import java.util.Map;
  * Created by fei on 2018/10/30.
  */
 
-public class FirstHomePageFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener{
+public class SFirstHomePageFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener{
 
     private RecyclerView mRecy;
     private SwipeRefreshLayout mRefreshLayout;
-    //private HomeAdapter mAdapter;
     private boolean mAtTop = true;
-    private int mScrollTotal;
-    private String[] mTitles;
-    private String[] mContents;
     private PullLoadMoreRecyclerView mPullLoadMoreRecyclerView;
-    GoodView mGoodView;
     private int mCount = 1;
-    private StaggeredRecycleViewAdapter mRecyclerViewAdapter;
-    public static FirstHomePageFragment newInstance() {
+    private HouseStaggeredRecycleViewAdapter mRecyclerViewAdapter;
+    public static SFirstHomePageFragment newInstance() {
 
         Bundle args = new Bundle();
 
-        FirstHomePageFragment fragment = new FirstHomePageFragment();
+        SFirstHomePageFragment fragment = new SFirstHomePageFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -59,21 +51,15 @@ public class FirstHomePageFragment extends SupportFragment implements SwipeRefre
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_frist, container, false);
-       // EventBusActivityScope.getDefault(_mActivity).register(this);
-     initView(view);
-        mGoodView = new GoodView(getContext());
+     //   EventBusActivityScope.getDefault(_mActivity).register(this);
+        initView(view);
         super.onCreate(savedInstanceState);
-
         mPullLoadMoreRecyclerView = view.findViewById(R.id.pullLoadMoreRecyclerView);
-        //mPullLoadMoreRecyclerView.setRefreshing(true);
         mPullLoadMoreRecyclerView.setStaggeredGridLayout(2);//参数为列数
-        mRecyclerViewAdapter = new StaggeredRecycleViewAdapter(getContext(), setList());
+        mRecyclerViewAdapter = new HouseStaggeredRecycleViewAdapter(getContext(), setList());
         mPullLoadMoreRecyclerView.setAdapter(mRecyclerViewAdapter);
         mPullLoadMoreRecyclerView.setOnPullLoadMoreListener(new PullLoadMoreListener());
-
-        // StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
-
-        mRecyclerViewAdapter = new StaggeredRecycleViewAdapter(getContext(), setList());
+        mRecyclerViewAdapter = new HouseStaggeredRecycleViewAdapter(getContext(), setList());
 
 
         getData();

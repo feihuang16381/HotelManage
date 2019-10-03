@@ -48,8 +48,7 @@ public class FifthFragment extends BaseMainFragment {
         BGALocalImageSize localImageSize = new BGALocalImageSize(720, 1280, 320, 640);
 // 设置数据源
         mContentBanner.setData(localImageSize, ImageView.ScaleType.CENTER_CROP,
-                R.drawable.uoko_guide_background_1,
-                R.drawable.uoko_guide_background_2,
-                R.drawable.uoko_guide_background_3);
+                R.drawable.uoko_guide_background_1
+              );
     }
 }

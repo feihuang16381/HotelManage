@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:text="梅樱堂"
+            android:layout_alignLeft="@id/House"
+            />
+
+        <ImageView
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="collection"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/collection_checked"
+            android:layout_gravity="right"
+            android:layout_alignRight="@id/House"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="241"
+            android:textSize="8sp"
+            android:layout_below="@+id/collection"
+            android:layout_alignLeft="@id/collection"/>
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+        <ImageView
+            android:id="@+id/House"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/collection"
+
+
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/house2">
+
+        </ImageView>
+        <!--   android:clickable="true"
+           android:onClick="collection"-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

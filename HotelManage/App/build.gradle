@@ -74,9 +74,10 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
-    compile 'com.wx.goodview:goodview:1.0.0'
+    implementation 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
+    implementation 'com.wx.goodview:goodview:1.0.0'
     implementation 'cn.bingoogolapple:bga-banner:2.2.6@aar'
+    implementation 'com.carson_ho:SearchLayout:1.0.1'
 
 
 }

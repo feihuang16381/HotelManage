@@ -61,9 +61,9 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
 
     private void initView() {
         mBottomBar = (BottomBar) findViewById(R.id.bottomBar);
-          mBottomBar.addItem(new BottomBarTab(this, R.drawable.ic_message_white_24dp))
-                    .addItem(new BottomBarTab(this, R.drawable.ic_record_voice_over))
-                    .addItem(new BottomBarTab(this, R.drawable.ic_chrome_reader_mode))
+          mBottomBar.addItem(new BottomBarTab(this, R.drawable.firstpage))
+                    .addItem(new BottomBarTab(this, R.drawable.collection3))
+                    .addItem(new BottomBarTab(this, R.drawable.discovery2))
                     .addItem(new BottomBarTab(this, R.drawable.ic_notifications))
                     .addItem(new BottomBarTab(this,R.drawable.ic_account_circle_white_24dp));
 

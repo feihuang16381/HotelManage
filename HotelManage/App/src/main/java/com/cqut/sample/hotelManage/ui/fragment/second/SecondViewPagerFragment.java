@@ -1,4 +1,4 @@
-package com.cqut.sample.hotelManage.ui.fragment.third;
+package com.cqut.sample.hotelManage.ui.fragment.second;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,15 +11,16 @@ import android.view.ViewGroup;
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.hotelManage.adapter.HotelPagerFragmentAdapter;
+import com.cqut.sample.hotelManage.adapter.SecHotelPagerFragmentAdapter;
 
 
-public class ViewPagerFragment extends SupportFragment {
+public class SecondViewPagerFragment extends SupportFragment {
     private TabLayout mTab;
     private ViewPager mViewPager;
 
-    public static ViewPagerFragment newInstance() {
+    public static SecondViewPagerFragment newInstance() {
         Bundle args = new Bundle();
-        ViewPagerFragment fragment = new ViewPagerFragment();
+        SecondViewPagerFragment fragment = new SecondViewPagerFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -40,9 +41,9 @@ public class ViewPagerFragment extends SupportFragment {
         mTab.addTab(mTab.newTab());
 
 
-        mViewPager.setAdapter(new HotelPagerFragmentAdapter(getChildFragmentManager(),
-                "推荐", "收藏热榜",
-                "秋游首选","亲子好房","民宿片场"));
+        mViewPager.setAdapter(new SecHotelPagerFragmentAdapter(getChildFragmentManager(),
+                "房屋", "房东",
+                "榜单","发现"));
         mTab.setupWithViewPager(mViewPager);
     }
 }

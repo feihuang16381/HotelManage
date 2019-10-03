@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import com.cqut.sample.R;
 import com.cqut.sample.hotelManage.base.BaseMainFragment;
+import com.cqut.sample.hotelManage.ui.fragment.third.ViewPagerFragment;
 
 
 public class HotelSecondFragment extends BaseMainFragment {
@@ -21,7 +22,13 @@ public class HotelSecondFragment extends BaseMainFragment {
 
         return fragment;
     }
-
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (findChildFragment(ViewPagerFragment.class) == null) {
+            loadRootFragment(R.id.Sfl_second_container, SecondViewPagerFragment.newInstance());
+        }
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -32,9 +39,5 @@ public class HotelSecondFragment extends BaseMainFragment {
     @Override
     public void onLazyInitView(@Nullable Bundle savedInstanceState) {
         super.onLazyInitView(savedInstanceState);
-
-    /*    if (findChildFragment(SecondHomeFragment.class) == null) {
-            loadRootFragment(R.id.fl_first_container, SecondHomeFragment.newInstance());
-        }*/
     }
 }
