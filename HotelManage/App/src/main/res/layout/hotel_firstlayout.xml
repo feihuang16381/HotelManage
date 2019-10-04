@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<android.support.v7.widget.SearchView
+
+    <android.support.v7.widget.SearchView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/search"></android.support.v7.widget.SearchView>
@@ -25,49 +39,180 @@
             android:layout_marginLeft="10dp"
             android:text="最in城市地标等你来“睡”"/>
       <ImageView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="32dp"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/house2"/>
-        <!--    <ImageView
-              android:id="@+id/first_pic"
-              android:layout_width="70dp"
-              android:layout_height="40dp"
-              android:src="@drawable/house2"
-              android:layout_alignParentRight="true"
-              android:layout_marginRight="10dp"
-              android:layout_marginTop="45dp"
-              />
-          <ImageView
-              android:id="@+id/sec_pic"
-              android:layout_width="70dp"
-              android:layout_height="40dp"
-              android:src="@drawable/house2"
-              android:layout_alignRight="@+id/first_pic"
-              android:layout_alignParentRight="true"
-              android:layout_marginRight="10dp"
-              android:layout_below="@+id/first_pic"
-              android:layout_marginTop="10dp"/>
-          <ImageView
-              android:id="@+id/third_pic"
-              android:layout_width="70dp"
-              android:layout_height="40dp"
-              android:src="@drawable/house2"
-              android:layout_alignParentRight="true"
-              android:layout_marginRight="10dp"
-              android:layout_below="@+id/sec_pic"
-              android:layout_marginTop="10dp"/>
-          <ImageView
-
-              android:layout_width="70dp"
-              android:layout_height="40dp"
-              android:src="@drawable/house2"
-              android:layout_alignParentRight="true"
-              android:layout_marginRight="10dp"
-              android:layout_below="@+id/third_pic"
-              android:layout_marginTop="10dp"/>-->
     </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="必睡清单"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10秒找到心仪民宿"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/House"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="梅樱堂"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/House"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="collection"
+            android:src="@drawable/collection_checked"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collection"
+            android:layout_alignLeft="@id/collection"
+            android:text="241"
+            android:textSize="8sp" />
+        <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+        <ImageView
+            android:id="@+id/House"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/collection"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/house2">
+
+        </ImageView>
+        <!--   android:clickable="true"
+           android:onClick="collection"-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:text="赶赴一场秋日红色盛宴"
+            android:layout_alignLeft="@id/House2"
+            />
+
+        <ImageView
+            android:id="@+id/collection2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="collection"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/collection_checked"
+            android:layout_gravity="right"
+            android:layout_alignRight="@id/House2"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="241"
+            android:textSize="8sp"
+            android:layout_below="@+id/collection2"
+            android:layout_alignLeft="@id/collection2"/>
+        <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+        <ImageView
+            android:id="@+id/House2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/collection2"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/house2">
+
+        </ImageView>
+
+        <!--   android:clickable="true"
+           android:onClick="collection"-->
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Top房东"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="经验丰富、持续好评、贴心服务"/>
+    <cn.bingoogolapple.bgabanner.BGABanner android:id="@+id/banner_guide_content"
+        app:banner_pageChangeDuration="1000"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight = "0"
+        app:banner_pointAutoPlayAble="false"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_pointTopBottomMargin="15dp"
+        app:banner_transitionEffect="alpha"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>
+
+
 </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

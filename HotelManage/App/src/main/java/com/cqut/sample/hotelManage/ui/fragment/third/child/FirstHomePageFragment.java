@@ -159,9 +159,7 @@ public class FirstHomePageFragment extends SupportFragment implements SwipeRefre
     }
 
     private void setRefresh() {
-
         mRecyclerViewAdapter.getDataList().clear();
-
         mCount = 1;
 
     }

@@ -13,6 +13,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".hotelManage.ui.SearchActivity"></activity>
+        <activity android:name=".hotelManage.browsehisActivity"></activity>
         <activity android:name=".hotelManage.RecyclerviewWaterfall_Activity"></activity>
         <activity
             android:name=".hotelManage.MainActivity"
