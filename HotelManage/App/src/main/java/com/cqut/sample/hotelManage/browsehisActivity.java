@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 
 import com.cqut.fragmentation.SupportActivity;
 import com.cqut.sample.R;
+import com.cqut.sample.hotelManage.adapter.BrowsehisAdapter;
 import com.cqut.sample.hotelManage.adapter.billboardStaggeredRecycleViewAdapter;
 import com.cqut.sample.hotelManage.base.BaseMainFragment;
 import com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView;
@@ -17,7 +18,7 @@ import java.util.Map;
 
 public class browsehisActivity extends SupportActivity implements BaseMainFragment.OnBackToFirstListener{
     private int mCount = 1;
-    private billboardStaggeredRecycleViewAdapter mRecyclerViewAdapter;
+    private BrowsehisAdapter mRecyclerViewAdapter;
     private PullLoadMoreRecyclerView mPullLoadMoreRecyclerView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,10 +26,10 @@ public class browsehisActivity extends SupportActivity implements BaseMainFragme
         setContentView(R.layout.browsehis);
         mPullLoadMoreRecyclerView = findViewById(R.id.pullLoadMoreRecyclerView);
         mPullLoadMoreRecyclerView.setStaggeredGridLayout(1);//参数为列数
-        mRecyclerViewAdapter = new billboardStaggeredRecycleViewAdapter(getApplicationContext(), setList());
+        mRecyclerViewAdapter = new BrowsehisAdapter(getApplicationContext(), setList());
         mPullLoadMoreRecyclerView.setAdapter(mRecyclerViewAdapter);
         mPullLoadMoreRecyclerView.setOnPullLoadMoreListener(new PullLoadMoreListener());
-        mRecyclerViewAdapter = new billboardStaggeredRecycleViewAdapter(getApplicationContext(), setList());
+        mRecyclerViewAdapter = new BrowsehisAdapter(getApplicationContext(), setList());
 
 
     }

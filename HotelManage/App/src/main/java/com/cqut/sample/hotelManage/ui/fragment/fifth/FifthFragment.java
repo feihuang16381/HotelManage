@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.cqut.sample.R;
+import com.cqut.sample.hotelManage.PsetActivity;
 import com.cqut.sample.hotelManage.base.BaseMainFragment;
 import com.cqut.sample.hotelManage.browsehisActivity;
 
@@ -20,6 +21,7 @@ import cn.bingoogolapple.bgabanner.BGALocalImageSize;
 public class FifthFragment extends BaseMainFragment {
     private BGABanner mContentBanner;
     RelativeLayout relativeLayout;
+    ImageView Pset;
     public static FifthFragment newInstance() {
 
         Bundle args = new Bundle();
@@ -36,6 +38,7 @@ public class FifthFragment extends BaseMainFragment {
         View view = inflater.inflate(R.layout.activity_pcenter, container, false);
         lunboPic(view);
         browHis();
+        Pset();
         return view;
     }
 
@@ -50,6 +53,7 @@ public class FifthFragment extends BaseMainFragment {
     public void lunboPic(View view){
         relativeLayout = view.findViewById(R.id.browseHis);
         mContentBanner = view.findViewById(R.id.banner_guide_content);
+        Pset =view.findViewById(R.id.pset);
 // Bitmap 的宽高在 maxWidth maxHeight 和 minWidth minHeight 之间
         BGALocalImageSize localImageSize = new BGALocalImageSize(720, 1280, 320, 640);
 // 设置数据源
@@ -63,6 +67,16 @@ public class FifthFragment extends BaseMainFragment {
             @Override
             public void onClick(View view) {
               Intent intent = new Intent(getActivity(), browsehisActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void Pset(){
+        Pset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PsetActivity.class);
                 startActivity(intent);
             }
         });

@@ -38,10 +38,6 @@
             android:textSize="8sp"
             android:layout_below="@+id/collection"
             android:layout_alignLeft="@id/collection"/>
-<!--
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">-->
 
         <ImageView
             android:id="@+id/House"
@@ -60,8 +56,6 @@
             android:src="@drawable/house2">
 
         </ImageView>
-        <!--   android:clickable="true"
-           android:onClick="collection"-->
 
     </RelativeLayout>
 

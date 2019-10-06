@@ -6,6 +6,7 @@
     <string name="discover">Discover</string>
     <string name="shop">Shop</string>7
     <string name="login">Sign in</string>
+    <string name="submit">提交</string>
     <string name="system">Account</string>
     <string name="swipe">SwipeBack</string>
     <string name="go_swipe_back">SwipeBackActivity+Fragment</string>

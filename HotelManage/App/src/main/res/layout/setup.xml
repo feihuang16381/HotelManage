@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNoticeBackground"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#fff"
+android:layout_marginBottom="8dp"
+        android:id="@+id/part_third2">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leftarrow"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/AccountandSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#fff"
+        android:layout_marginBottom="5dp"
+       >
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/bookshelf_2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/bookshelf_2"
+                android:gravity="center"
+                android:text="账号安全"
+                android:layout_centerVertical="true"
+                android:textSize="14dp" />
+
+<ImageView
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:src="@drawable/arrow_right02"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#99999999"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#fff"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:gravity="center"
+                android:text="关于途家酒店"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_right02"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+
+        android:background="#99999999"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:gravity="center"
+                android:text="推荐给朋友"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_right02"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+
+        android:background="#99999999"/>
+
+    <LinearLayout
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:gravity="center"
+                android:text="意见反馈"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_right02"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+
+        android:background="#99999999"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#fff"
+        android:layout_marginBottom="10dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+        >
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+
+
+
+                android:layout_marginStart="10dp"
+
+                android:gravity="center"
+                android:text="App版本"
+                android:textSize="14dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="当前版本1.0.0"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#99999999"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#fff"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:gravity="center"
+                android:text="房屋编号直达"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_right02"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+
+        android:background="#99999999"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:gravity="center"
+                android:text="给途家酒店好评"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_right02"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+
+        android:background="#99999999"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+
+                android:text="放心消费声明"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_right02"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+
+                android:text="注销登陆"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

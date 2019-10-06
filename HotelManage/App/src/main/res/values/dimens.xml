@@ -9,4 +9,14 @@
     <dimen name="text_margin">16dp</dimen>
     <dimen name="bottombar_height">48dp</dimen>
     <dimen name="bottombar_wechat_height">52dp</dimen>
+    <dimen name="text_size_normal">14dp</dimen>
+    <dimen name="margin_litter">2dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="line_litter_height">0.5dp</dimen>
 </resources>

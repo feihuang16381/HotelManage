@@ -4,7 +4,8 @@
     <color name="colorPrimaryDark">#D32F2F</color>
     <color name="colorAccent">#536DFE</color>
     <color name="bg_app">#F1F1F1</color>
-
+    <color name="orange_most">#C76114</color>
+    <color name="orange_light">#ffd39b</color>
     <color name="tab_unselect">#c9c9c9</color>
     <color name="bg_btn">#dadada</color>
     <color name="xiahuaxian">#7c7477</color>
