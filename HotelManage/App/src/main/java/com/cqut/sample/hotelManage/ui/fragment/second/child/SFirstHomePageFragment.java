@@ -31,8 +31,8 @@ import java.util.Map;
  */
 
 public class SFirstHomePageFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener{
-
-    private RecyclerView mRecy;
+    private int[] houses = {R.drawable.house3,R.drawable.house,R.drawable.house,R.drawable.house3,R.drawable.house5,R.drawable.house,R.drawable.house,R.drawable.house3,R.drawable.house5,R.drawable.house,R.drawable.house,R.drawable.house3,R.drawable.house5,R.drawable.house,R.drawable.house,R.drawable.house3,R.drawable.house5,R.drawable.house,R.drawable.house,R.drawable.house3};
+     private RecyclerView mRecy;
     private SwipeRefreshLayout mRefreshLayout;
     private boolean mAtTop = true;
     private PullLoadMoreRecyclerView mPullLoadMoreRecyclerView;
@@ -118,14 +118,17 @@ public class SFirstHomePageFragment extends SupportFragment implements SwipeRefr
 
     private List<Map<String, String>> setList() {
         List<Map<String, String>> dataList = new ArrayList<>();
-        int start = 30 * (mCount - 1);
+        int start = 20 * (mCount - 1);
         Map<String, String> map;
-        for (int i = start; i < 30 * mCount; i++) {
+        for (int i = 0; i < 20 ; i++) {
             map = new HashMap<>();
             map.put("text", "Third" + i);
             map.put("height", (120 + 5 * i) + "");
+            map.put("house",houses[i]+"");
             dataList.add(map);
+
         }
+
         return dataList;
 
     }

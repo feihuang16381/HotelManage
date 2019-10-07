@@ -1,12 +1,16 @@
 package com.cqut.sample.hotelManage.adapter;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.cqut.sample.R;
@@ -39,12 +43,13 @@ public class HouseStaggeredRecycleViewAdapter extends RecyclerView.Adapter<House
         ImageView goodView;
         View dddView;
         ImageView collectView;
+        ImageView house;
 
         public ViewHolder(View itemView) {
             super(itemView);
          //  title = (TextView) itemView.findViewById(R.id.title);
             dddView =itemView;
-
+            house = (ImageView) itemView.findViewById(R.id.House);
 
             collectView =(ImageView) itemView.findViewById(R.id.collection);
         }
@@ -73,7 +78,8 @@ public class HouseStaggeredRecycleViewAdapter extends RecyclerView.Adapter<House
         ((ImageView) view).setImageResource(R.drawable.good_checked);
         mGoodView.setText("+1");
         mGoodView.show(view);
-    }
+}
+
     public void collection(View view) {
         ((ImageView) view).setImageResource(R.drawable.collection_checked);
         mGoodView.setTextInfo("收藏成功", Color.parseColor("#f66467"), 12);
@@ -81,7 +87,16 @@ public class HouseStaggeredRecycleViewAdapter extends RecyclerView.Adapter<House
     }
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-    //    holder.title.setText(dataList.get(position).get("text"));
+   /*     Resources resources = mContext.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        int width = dm.widthPixels/3;
+        int height = width*3/2;
+        RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) holder.house.getLayoutParams();
+        layoutParams.height = height;
+        holder.house.setLayoutParams(layoutParams);*/
+//        holder.title.setText(dataList.get(position).get("text"));
+     //   holder.house.setImageResource(Integer.parseInt(dataList.get(position).get("house")));
+      holder.house.setImageDrawable(mContext.getResources().getDrawable(Integer.parseInt(dataList.get(position).get("house"))));
       //  holder.title.setHeight(Integer.parseInt(dataList.get(position).get("height")));//高度随机，下拉刷新高度会变
     }
 

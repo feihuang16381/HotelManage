@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     tools:context=".hotelManage.RecyclerviewWaterfall_Activity">
 
-   <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+    <!-- <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+         android:id="@+id/pullLoadMoreRecyclerView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/pullLoadMoreRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-  <!--  <android.support.v7.widget.RecyclerView
-        android:id="@+id/pullLoadMoreRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>-->
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

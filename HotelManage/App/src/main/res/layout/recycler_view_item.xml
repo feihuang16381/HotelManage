@@ -57,7 +57,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:gravity="center_horizontal"
-           android:text="小飞是全世界最帅的男生"
+           android:text="初秋小众目的地民宿指南"
            android:layout_marginTop="10dp"
            android:layout_gravity="center_horizontal"
            android:textSize="12sp"/>

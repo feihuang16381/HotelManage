@@ -17,10 +17,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/house2">
+            android:src="@drawable/house3"
+          >
 
         </ImageView>
         <!--   android:clickable="true"
+          android:src="@drawable/house3"
            android:onClick="collection"-->
         <ImageView
             android:id="@+id/collection"
@@ -41,7 +43,7 @@
         android:layout_gravity="left"
         android:layout_marginTop="10dp"
         android:gravity="left"
-        android:text="小飞是全世界最帅的男生"
+        android:text="北京西站南站天安们故宫北欧淡然轻奢居"
         android:textSize="16sp"
         android:layout_marginLeft="11dp"
         android:textColor="@android:color/black"/>
